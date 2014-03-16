@@ -17,8 +17,12 @@
 		5E262C2D18D5559700B48102 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E262C2C18D5559700B48102 /* XCTest.framework */; };
 		5E262C2E18D5559700B48102 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E262C1318D5559700B48102 /* Foundation.framework */; };
 		5E262C2F18D5559700B48102 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E262C1718D5559700B48102 /* UIKit.framework */; };
-		5E262C3718D5559700B48102 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5E262C3518D5559700B48102 /* InfoPlist.strings */; };
-		5E262C3918D5559700B48102 /* CWDepthViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E262C3818D5559700B48102 /* CWDepthViewDemoTests.m */; };
+		5E262C4718D555B200B48102 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E262C4518D555B200B48102 /* MainViewController.m */; };
+		5E262C4818D555B200B48102 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E262C4618D555B200B48102 /* MainViewController.xib */; };
+		5E262C4E18D557C500B48102 /* mavericks.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5E262C4D18D557C500B48102 /* mavericks.jpg */; };
+		5E262C5318D55ACF00B48102 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E262C5118D55ACF00B48102 /* DemoViewController.m */; };
+		5E262C5418D55ACF00B48102 /* DemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E262C5218D55ACF00B48102 /* DemoViewController.xib */; };
+		5E262C5A18D55C6200B48102 /* CWDepthView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E262C5918D55C6200B48102 /* CWDepthView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,9 +49,15 @@
 		5E262C2518D5559700B48102 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5E262C2B18D5559700B48102 /* CWDepthViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CWDepthViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E262C2C18D5559700B48102 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		5E262C3418D5559700B48102 /* CWDepthViewDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CWDepthViewDemoTests-Info.plist"; sourceTree = "<group>"; };
-		5E262C3618D5559700B48102 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		5E262C3818D5559700B48102 /* CWDepthViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CWDepthViewDemoTests.m; sourceTree = "<group>"; };
+		5E262C4418D555B200B48102 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		5E262C4518D555B200B48102 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		5E262C4618D555B200B48102 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		5E262C4D18D557C500B48102 /* mavericks.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mavericks.jpg; sourceTree = "<group>"; };
+		5E262C5018D55ACF00B48102 /* DemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
+		5E262C5118D55ACF00B48102 /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
+		5E262C5218D55ACF00B48102 /* DemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoViewController.xib; sourceTree = "<group>"; };
+		5E262C5818D55C6200B48102 /* CWDepthView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CWDepthView.h; path = CWDepthView/CWDepthView.h; sourceTree = "<group>"; };
+		5E262C5918D55C6200B48102 /* CWDepthView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CWDepthView.m; path = CWDepthView/CWDepthView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +87,9 @@
 		5E262C0718D5559700B48102 = {
 			isa = PBXGroup;
 			children = (
+				5E262C4D18D557C500B48102 /* mavericks.jpg */,
+				5E262C4918D5563800B48102 /* CWDepthView */,
 				5E262C1918D5559700B48102 /* CWDepthViewDemo */,
-				5E262C3218D5559700B48102 /* CWDepthViewDemoTests */,
 				5E262C1218D5559700B48102 /* Frameworks */,
 				5E262C1118D5559700B48102 /* Products */,
 			);
@@ -109,6 +120,7 @@
 			children = (
 				5E262C2218D5559700B48102 /* AppDelegate.h */,
 				5E262C2318D5559700B48102 /* AppDelegate.m */,
+				5E262C4218D5559D00B48102 /* View Controllers */,
 				5E262C2518D5559700B48102 /* Images.xcassets */,
 				5E262C1A18D5559700B48102 /* Supporting Files */,
 			);
@@ -126,22 +138,42 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		5E262C3218D5559700B48102 /* CWDepthViewDemoTests */ = {
+		5E262C4218D5559D00B48102 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				5E262C3818D5559700B48102 /* CWDepthViewDemoTests.m */,
-				5E262C3318D5559700B48102 /* Supporting Files */,
+				5E262C4F18D55AB400B48102 /* DemoViewController */,
+				5E262C4318D555A400B48102 /* MainViewController */,
 			);
-			path = CWDepthViewDemoTests;
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
-		5E262C3318D5559700B48102 /* Supporting Files */ = {
+		5E262C4318D555A400B48102 /* MainViewController */ = {
 			isa = PBXGroup;
 			children = (
-				5E262C3418D5559700B48102 /* CWDepthViewDemoTests-Info.plist */,
-				5E262C3518D5559700B48102 /* InfoPlist.strings */,
+				5E262C4418D555B200B48102 /* MainViewController.h */,
+				5E262C4518D555B200B48102 /* MainViewController.m */,
+				5E262C4618D555B200B48102 /* MainViewController.xib */,
 			);
-			name = "Supporting Files";
+			name = MainViewController;
+			sourceTree = "<group>";
+		};
+		5E262C4918D5563800B48102 /* CWDepthView */ = {
+			isa = PBXGroup;
+			children = (
+				5E262C5818D55C6200B48102 /* CWDepthView.h */,
+				5E262C5918D55C6200B48102 /* CWDepthView.m */,
+			);
+			name = CWDepthView;
+			sourceTree = "<group>";
+		};
+		5E262C4F18D55AB400B48102 /* DemoViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5E262C5018D55ACF00B48102 /* DemoViewController.h */,
+				5E262C5118D55ACF00B48102 /* DemoViewController.m */,
+				5E262C5218D55ACF00B48102 /* DemoViewController.xib */,
+			);
+			name = DemoViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,7 +252,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E262C1E18D5559700B48102 /* InfoPlist.strings in Resources */,
+				5E262C4E18D557C500B48102 /* mavericks.jpg in Resources */,
+				5E262C4818D555B200B48102 /* MainViewController.xib in Resources */,
 				5E262C2618D5559700B48102 /* Images.xcassets in Resources */,
+				5E262C5418D55ACF00B48102 /* DemoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,7 +263,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E262C3718D5559700B48102 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,7 +273,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E262C5A18D55C6200B48102 /* CWDepthView.m in Sources */,
 				5E262C2418D5559700B48102 /* AppDelegate.m in Sources */,
+				5E262C4718D555B200B48102 /* MainViewController.m in Sources */,
+				5E262C5318D55ACF00B48102 /* DemoViewController.m in Sources */,
 				5E262C2018D5559700B48102 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,7 +285,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E262C3918D5559700B48102 /* CWDepthViewDemoTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,14 +303,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				5E262C1D18D5559700B48102 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		5E262C3518D5559700B48102 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5E262C3618D5559700B48102 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
