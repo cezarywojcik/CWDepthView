@@ -221,7 +221,7 @@
 - (void)createDepthViewWindow
 {
     self.depthViewWindow = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.depthViewWindow.backgroundColor = [UIColor blackColor];
+    self.depthViewWindow.backgroundColor = [UIColor clearColor];
     self.depthViewWindow.userInteractionEnabled = YES;
     self.depthViewWindow.hidden = NO;
     self.depthViewWindow.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
@@ -257,17 +257,18 @@
     // animate status bar out quickly
     [UIView animateWithDuration:DEPTH_VIEW_QUICK_ANIMATION_TIME animations:^{
         self.screenshotView.alpha = 1.0f;
-        self.fadeView.alpha = DEPTH_VIEW_FADE_VIEW_ALPHA;
-    }];
-    
-    // animate screenshot view
-    [UIView animateWithDuration:DEPTH_VIEW_ANIMATION_TIME animations:^{
-        self.screenshotView.transform = CGAffineTransformMakeScale(DEPTH_VIEW_SCALE, DEPTH_VIEW_SCALE);
-        self.screenshotView.alpha = 0.0f;
-        self.blurredScreenshotView.transform = CGAffineTransformMakeScale(DEPTH_VIEW_SCALE, DEPTH_VIEW_SCALE);
-        self.blurredScreenshotView.alpha = 1.0f;
     } completion:^(BOOL finished) {
-        [completion invoke];
+        self.depthViewWindow.backgroundColor = [UIColor blackColor];
+        // animate screenshot view
+        [UIView animateWithDuration:DEPTH_VIEW_ANIMATION_TIME animations:^{
+            self.screenshotView.transform = CGAffineTransformMakeScale(DEPTH_VIEW_SCALE, DEPTH_VIEW_SCALE);
+            self.screenshotView.alpha = 0.0f;
+            self.blurredScreenshotView.transform = CGAffineTransformMakeScale(DEPTH_VIEW_SCALE, DEPTH_VIEW_SCALE);
+            self.blurredScreenshotView.alpha = 1.0f;
+            self.fadeView.alpha = DEPTH_VIEW_FADE_VIEW_ALPHA;
+        } completion:^(BOOL finished) {
+            [completion invoke];
+        }];
     }];
 }
 
@@ -289,11 +290,14 @@
         // remove fade
         self.fadeView.alpha = 0.0f;
     } completion:^(BOOL finished) {
+        // clear window
+        self.depthViewWindow.backgroundColor = [UIColor clearColor];
+        
         // animate screenshot out quickly
         [UIView animateWithDuration:DEPTH_VIEW_QUICK_ANIMATION_TIME animations:^{
             self.screenshotView.alpha = 0.0f;
-            self.depthViewWindow.hidden = YES;
         } completion:^(BOOL finished) {
+            self.depthViewWindow.hidden = YES;
             [completion invoke];
         }];
     }];

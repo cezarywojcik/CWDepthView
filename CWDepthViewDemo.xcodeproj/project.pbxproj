@@ -19,10 +19,10 @@
 		5E262C2F18D5559700B48102 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E262C1718D5559700B48102 /* UIKit.framework */; };
 		5E262C4718D555B200B48102 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E262C4518D555B200B48102 /* MainViewController.m */; };
 		5E262C4818D555B200B48102 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E262C4618D555B200B48102 /* MainViewController.xib */; };
-		5E262C4E18D557C500B48102 /* mavericks.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5E262C4D18D557C500B48102 /* mavericks.jpg */; };
 		5E262C5318D55ACF00B48102 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E262C5118D55ACF00B48102 /* DemoViewController.m */; };
 		5E262C5418D55ACF00B48102 /* DemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E262C5218D55ACF00B48102 /* DemoViewController.xib */; };
 		5E262C5A18D55C6200B48102 /* CWDepthView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E262C5918D55C6200B48102 /* CWDepthView.m */; };
+		5EAABDF718D584320081B1CD /* mavericks.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5EAABDF618D584320081B1CD /* mavericks.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,12 +52,12 @@
 		5E262C4418D555B200B48102 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		5E262C4518D555B200B48102 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		5E262C4618D555B200B48102 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
-		5E262C4D18D557C500B48102 /* mavericks.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mavericks.jpg; sourceTree = "<group>"; };
 		5E262C5018D55ACF00B48102 /* DemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
 		5E262C5118D55ACF00B48102 /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
 		5E262C5218D55ACF00B48102 /* DemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoViewController.xib; sourceTree = "<group>"; };
 		5E262C5818D55C6200B48102 /* CWDepthView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CWDepthView.h; path = CWDepthView/CWDepthView.h; sourceTree = "<group>"; };
 		5E262C5918D55C6200B48102 /* CWDepthView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CWDepthView.m; path = CWDepthView/CWDepthView.m; sourceTree = "<group>"; };
+		5EAABDF618D584320081B1CD /* mavericks.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = mavericks.jpg; path = CWDepthViewDemo/mavericks.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +87,7 @@
 		5E262C0718D5559700B48102 = {
 			isa = PBXGroup;
 			children = (
-				5E262C4D18D557C500B48102 /* mavericks.jpg */,
+				5EAABDF618D584320081B1CD /* mavericks.jpg */,
 				5E262C4918D5563800B48102 /* CWDepthView */,
 				5E262C1918D5559700B48102 /* CWDepthViewDemo */,
 				5E262C1218D5559700B48102 /* Frameworks */,
@@ -252,9 +252,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E262C1E18D5559700B48102 /* InfoPlist.strings in Resources */,
-				5E262C4E18D557C500B48102 /* mavericks.jpg in Resources */,
 				5E262C4818D555B200B48102 /* MainViewController.xib in Resources */,
 				5E262C2618D5559700B48102 /* Images.xcassets in Resources */,
+				5EAABDF718D584320081B1CD /* mavericks.jpg in Resources */,
 				5E262C5418D55ACF00B48102 /* DemoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -467,6 +467,7 @@
 				5E262C3E18D5559700B48102 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5E262C3F18D5559700B48102 /* Build configuration list for PBXNativeTarget "CWDepthViewDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +476,7 @@
 				5E262C4118D5559700B48102 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
