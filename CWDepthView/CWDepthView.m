@@ -297,7 +297,11 @@
         [UIView animateWithDuration:DEPTH_VIEW_QUICK_ANIMATION_TIME animations:^{
             self.screenshotView.alpha = 0.0f;
         } completion:^(BOOL finished) {
-            self.depthViewWindow.hidden = YES;
+            self.presentedView = nil;
+            self.blurredScreenshotView = nil;
+            self.screenshotView = nil;
+            self.fadeView = nil;
+            self.depthViewWindow = nil;
             [completion invoke];
         }];
     }];
