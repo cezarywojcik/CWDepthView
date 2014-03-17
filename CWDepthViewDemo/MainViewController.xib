@@ -14,7 +14,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mavericks.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="WtA-jl-euK">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mavericks.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="WtA-jl-euK">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 </imageView>
@@ -32,8 +32,12 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstAttribute="bottom" secondItem="WtA-jl-euK" secondAttribute="bottom" id="2XY-MI-L28"/>
                 <constraint firstAttribute="centerX" secondItem="6AS-E1-Imx" secondAttribute="centerX" id="775-s8-3jC"/>
+                <constraint firstAttribute="trailing" secondItem="WtA-jl-euK" secondAttribute="trailing" id="WCf-pY-SEh"/>
+                <constraint firstItem="WtA-jl-euK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="aDP-X2-hYI"/>
                 <constraint firstAttribute="centerY" secondItem="6AS-E1-Imx" secondAttribute="centerY" id="f3Y-dB-HXA"/>
+                <constraint firstItem="WtA-jl-euK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="rAP-RT-wXw"/>
             </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>

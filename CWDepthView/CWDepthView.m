@@ -276,7 +276,7 @@
 {
     [UIView animateWithDuration:DEPTH_VIEW_ANIMATION_TIME animations:^{
         // animate presented view out
-        self.presentedView.transform = CGAffineTransformMakeScale(2/DEPTH_VIEW_SCALE, 2/DEPTH_VIEW_SCALE);
+        self.presentedView.transform = CGAffineTransformMakeScale(1/DEPTH_VIEW_SCALE, 1/DEPTH_VIEW_SCALE);
         self.presentedView.alpha = 0.0f;
         
         // animate blurred out
@@ -311,7 +311,8 @@
     [self.view addSubview:viewToPresent];
     self.presentedView = viewToPresent;
     self.presentedView.alpha = 0.0f;
-    self.presentedView.transform = CGAffineTransformMakeScale(2/DEPTH_VIEW_SCALE, 2/DEPTH_VIEW_SCALE);
+    self.presentedView.center = self.view.center;
+    self.presentedView.transform = CGAffineTransformMakeScale(1/DEPTH_VIEW_SCALE, 1/DEPTH_VIEW_SCALE);
     [UIView animateWithDuration:DEPTH_VIEW_ANIMATION_TIME animations:^{
         self.presentedView.alpha = 1.0f;
         self.presentedView.transform = CGAffineTransformMakeScale(1.0f, 1.0f);
